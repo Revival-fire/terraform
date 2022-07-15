@@ -19,7 +19,7 @@ resource "aws_instance" "Jenkins" {
 #create instance for sonbarqube
 resource "aws_instance" "sonbarqube" {
   ami                         = var.ami-sonar
-  instance_type               = "t2.medium"
+  instance_type               = "t2.micro"
   subnet_id                   = var.subnets-compute
   vpc_security_group_ids      = var.sg-compute
   associate_public_ip_address = true
@@ -37,7 +37,7 @@ resource "aws_instance" "sonbarqube" {
 # create instance for artifactory
 resource "aws_instance" "artifactory" {
   ami                         = var.ami-jfrog
-  instance_type               = "t2.medium"
+  instance_type               = "t2.micro"
   subnet_id                   = var.subnets-compute
   vpc_security_group_ids      = var.sg-compute
   associate_public_ip_address = true
