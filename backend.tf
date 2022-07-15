@@ -10,10 +10,10 @@
 
 terraform {
   backend "remote" {
-    organization = "pisitis"
+    organization = "Gbokpos"
 
     workspaces {
-      name = "PBL-19"
+      name = "terraform-cloud"
     }
   }
 }
