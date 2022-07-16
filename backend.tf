@@ -8,12 +8,12 @@
 #   }
 # }
 
-terraform {
-  backend "remote" {
-    organization = "Gbokpos"
-
-    workspaces {
-      name = "terraform-cloud"
-    }
-  }
-}
+#terraform {
+ # backend "remote" {
+  #  organization = "Gbokpos"
+#
+ #   workspaces {
+  #    name = "terraform-cloud"
+   # }
+  #}
+#}
